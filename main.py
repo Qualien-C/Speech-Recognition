@@ -20,7 +20,7 @@ def SpeechToText():
       print(Text)
       
       # open Text file, write the Text and close it
-      file = open("Text.txt", "a")
+      file = open("speechText.txt", "a")
       file.write(f"{Text}\n")
       file.close()
   except:
