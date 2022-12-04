@@ -18,6 +18,11 @@ def SpeechToText():
       #lower or upper anything works fine
       Text = Text.lower()
       print(Text)
+      
+      # open Text file, write the Text and close it
+      file = open("Text.txt", "a")
+      file.write(f"{Text}\n")
+      file.close()
   except:
     pass
 
